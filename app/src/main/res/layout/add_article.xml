@@ -38,9 +38,20 @@
         android:layout_height="wrap_content"
         android:text="Ajouter" />
 
-    <TextView
-        android:id="@+id/articles"
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"/>
+
+    <ListView
+        android:id="@+id/listArticle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="match_parent"></ListView>
+
+
+
+
 </LinearLayout>
