@@ -26,6 +26,7 @@ public class GetArticleAsyncTask extends AsyncTask<Object, Void, Void> {
         try{
             adapter = (ArticleAdapter) objects[0];
             articles = (ArrayList<ArticleDTO>) objects[1];
+            articles.clear();
             String lien = "https://api.getpostman.com/collections";
             String apiKey = "3efad7e576c34c65937e742970ac9f38";
             URL url = new URL(lien);
